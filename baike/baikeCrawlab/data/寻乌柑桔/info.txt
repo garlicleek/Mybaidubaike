@@ -1,0 +1,10 @@
+url:
+https://baike.baidu.com/item/%E5%AF%BB%E4%B9%8C%E6%9F%91%E6%A1%94
+name:
+寻乌柑桔
+description:
+从美国引进的脐橙品种，在国际市场上很有竞争力，属寻乌柑桔之王牌。
+中文名：:寻乌柑桔
+引进地：:美国
+paragraph:
+

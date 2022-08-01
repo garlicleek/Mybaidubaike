@@ -1,0 +1,21 @@
+url:
+https://baike.baidu.com/item/%E6%8F%90%E8%8E%AB%E9%9D%9E%E7%BB%B4%E5%B0%8F%E9%BA%A6
+name:
+提莫非维小麦
+description:
+提莫非维小麦（学名：Triticum timopheevii），为禾本科小麦属下的一个植物种。
+中文名：:提莫非维小麦
+拉丁学名：:Triticum timopheevi Zhuk.
+界：:植物界
+门：:被子植物门
+纲：:单子叶植物纲
+目：:禾本目
+科：:禾本科
+亚科：:早熟禾亚科
+族：:小麦族
+属：:小麦属
+paragraph:
+形态特征:秆光滑，直立，基部稍微膝曲，高50-90厘米，具5-6节。叶鞘疏被长柔毛，基部者毛较密；叶片两面脉上均疏被白色长柔毛。穗状花序宽扁，长3-4.5厘米，宽1-1.5厘米，穗轴具短柔毛；颖革质，背面密被灰白色短毛，中脉形成明显主脊自基部直达顶端，并延伸成1毫米的尖齿，侧脉形成侧脊，侧齿顶钝圆，长不及1毫米；外稃较薄，中脉延伸成较细的芒。颖果两端尖锐，紧密包被于稃内不易脱离 。
+分布范围:主要分布在苏联格鲁几亚。模式标本采自苏联格鲁几亚 。
+主要价值:本种对锈病、黑穗病、白粉病有高度的抗性，供选育抗病品种之用 。
+相关的种:与“提莫非维小麦 Triticum timopheevii (Zhuk.) Zhuk.”相关的种有：普通小麦Triticum aestivum L.一粒小麦Triticum monococcum L.圆锥小麦Triticum turgidum L.波斯小麦（变种）Triticum turgidum L. var. carthlicum (Nevski) Yan ex P.C. Kuo野生二粒小麦（变种）Triticum turgidum L. var. dicoccoides (Körn.) Bowden硬粒小麦（变种）Triticum turgidum L. var. durum (Desf. ) Yan. ex P. C. Kuo波兰小麦（变种）Triticum turgidum L. var. polonicum (L. ) Yan ex P. C. Kuo圆锥小麦（原变种）Triticum turgidum L. var. turgidum

@@ -1,0 +1,11 @@
+url:
+https://baike.baidu.com/item/%E7%BA%A2%E5%B7%B4%E6%8B%89%E5%A4%9A
+name:
+红巴拉多
+description:
+红巴拉多，欧亚种，果穗大，平均单穗重600克，最大单穗重2000克。果粒大小均匀，着生中等紧密，椭圆形。
+中文名：:红巴拉多
+是否含防腐剂：:否
+适宜人群：:所有
+paragraph:
+
