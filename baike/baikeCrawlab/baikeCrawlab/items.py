@@ -21,3 +21,4 @@ class imgItem(scrapy.Item):
     name = scrapy.Field()
     plant_name = scrapy.Field()
     no = scrapy.Field()
+    content = scrapy.Field()

@@ -1,5 +1,7 @@
 import os
 
+from pymongo import *
+
 
 def executeSpider(path, dic):
     print('Executing: ' + path)
@@ -19,19 +21,22 @@ def executeSelenium():
 
 
 if __name__ == '__main__':
+    # 和获取每一部分的工作地址
     path = os.getcwd()
     spider_path = path + r'\baikeCrawlab'
-    print("Now the project is woring at ", path)
-    # 清空中间过程的cropsUrl文件
-    with open(os.getcwd() + '/cropsUrl.txt', 'w') as f:
-        f.write('')
-    f.close()
+    print("Now the project is working at ", path)
 
-    parm = {'spider': ['crops'], 'tag': r'{}\baikeCrawlab\baikeCrawlab\cropName.txt'.format(os.getcwd())}
-    executeSpider(spider_path, parm)
 
-    executeSelenium()
+    # 执行爬虫
 
-    parm['tag'] = r'{}\extendName.txt'.format(os.getcwd())
+    # 运行selenium
 
-    executeSpider(spider_path, parm)
+    # 再次运行爬虫
+
+    # 以下代码是通过文件传输的代码, 已弃用
+    # parm = {'spider': ['crops'], 'tag': r'{}\baikeCrawlab\baikeCrawlab\cropName.txt'.format(os.getcwd())}
+    # executeSpider(spider_path, parm)
+    # executeSelenium()
+    # parm['tag'] = r'{}\extendName.txt'.format(os.getcwd())
+    #
+    # executeSpider(spider_path, parm)
