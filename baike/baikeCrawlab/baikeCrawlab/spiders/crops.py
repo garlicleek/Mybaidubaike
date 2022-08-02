@@ -14,19 +14,17 @@ class CropsSpider(scrapy.Spider):
     start_urls = ['http://baike.baidu.com/item/']
     crawlList = []
     custom_settings = {
-        'ITEM_PIPELINES': {'baikeCrawlab.pipelines.BaikespiderPipeline': 300}
+        'ITEM_PIPELINES': {'baikeCrawlab.pipelines.MongoTxtPipeline': 300}
     }
     offset = 0
 
     def start_requests(self):
-        # 初始化,来自 星图 还是来自 cropName.txt
-        tag = getattr(self, 'tag', None)
-
         # windows 和 Linux 的寻址方式不同, 所以推荐使用绝对路径
-        with open(tag, 'r', encoding='utf-8') as f:
+        with open(os.path.dirname(os.getcwd()) + '/cropName.txt', 'r', encoding='utf-8') as f:
             for line in f.readlines():
                 self.crawlList.append(self.start_urls[0] + line.strip('\n'))
         f.close()
+        #
         print(self.crawlList)
         yield Request(url=self.crawlList[0], dont_filter=True)
 
@@ -115,12 +113,10 @@ class CropsSpider(scrapy.Spider):
             except AttributeError:
                 item['paragraph'] = ''
                 print(response.url, 'para 不存在')
-
+            print(item)
             yield item
 
         # 递归爬取下一个url
         if self.offset + 1 < len(self.crawlList):
             self.offset += 1
             yield Request(url=self.crawlList[self.offset], dont_filter=True)
-
-# 百度星图拓展

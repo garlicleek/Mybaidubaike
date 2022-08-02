@@ -2,11 +2,18 @@
 #
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+import os
+import time
 
+import scrapy.http
 from scrapy import signals
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
+from scrapy.utils.project import get_project_settings
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class CropsSpiderMiddleware:
@@ -56,10 +63,18 @@ class CropsSpiderMiddleware:
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
+# 对于百科图册需要用selenium进行访问
 class CropsDownloaderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
+    def __init__(self):
+        options = Options()
+        options.add_argument('--headless')  # 设置chrome浏览器无界面模式
+        self.driver = webdriver.Chrome(os.getcwd() + "/baikeCrawlab/chromedriver.exe", options=options)
+
+    def __del__(self):
+        self.driver.close()
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -69,8 +84,22 @@ class CropsDownloaderMiddleware:
         return s
 
     def process_request(self, request, spider):
-        # Called for each request that goes through the downloader
-        # middleware.
+        if 'selenium' in request.meta.keys():
+            print('selenium...')
+            # Not all methods need to be defined. If a method is not defined,
+            # scrapy acts as if the downloader middleware does not modify the
+            # passed objects.
+
+            self.driver.get(request.url)
+            # 这里需要一个时间暂缓(=>1即可)
+            time.sleep(3)
+            # 滑动到最底部
+            js_button = 'document.documentElement.scrollTop=100000'
+            # 执行js，滑动到最底部
+            self.driver.execute_script(js_button)
+            # 暂缓时间
+            time.sleep(2)
+            return scrapy.http.HtmlResponse(url=request.url, body=self.driver.page_source, encoding='utf-8')
 
         # Must either:
         # - return None: continue processing this request
@@ -97,7 +126,7 @@ class CropsDownloaderMiddleware:
         # - return None: continue processing this exception
         # - return a Response object: stops process_exception() chain
         # - return a Request object: stops process_exception() chain
-        pass
+        return None
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)

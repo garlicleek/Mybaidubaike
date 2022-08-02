@@ -13,16 +13,13 @@ class ImgSpider(scrapy.Spider):
     allowed_domains = ['baike.baidu.com']
     start_urls = ['http://baike.baidu.com/item/']
     custom_settings = {
-        'ITEM_PIPELINES': {'baikeCrawlab.pipelines.ImgsPipeline': 200}
-    }
+            'ITEM_PIPELINES': {'baikeCrawlab.pipelines.MongoImgPipeline': 200}
+        }
     crawlList = []
     offset = 0
 
     def start_requests(self):
-        # 初始化,来自 星图 还是来自 cropName.txt
-        tag = getattr(self, 'tag', None)
-
-        with open(tag, 'r', encoding='utf-8') as f:
+        with open(os.path.dirname(os.getcwd()) + '/cropName.txt', 'r', encoding='utf-8') as f:
             for line in f.readlines():
                 self.crawlList.append(self.start_urls[0] + line.strip('\n'))
         f.close()
@@ -51,7 +48,8 @@ class ImgSpider(scrapy.Spider):
             # 词条图册
             pictures_raw = response.xpath("//a[@class='more-link']/@href").get()
             pictures = "https://baike.baidu.com" + pictures_raw
-            yield Request(url=pictures, callback=self.pictures_parse, meta={"plant_name": plant_name})
+            # 对于这个 url 通过selenium访问
+            yield Request(url=pictures, callback=self.pictures_parse, meta={"plant_name": plant_name, "selenium": True})
 
         # 递归爬取下一个url
         if self.offset + 1 < len(self.crawlList):
@@ -74,6 +72,7 @@ class ImgSpider(scrapy.Spider):
 
                 if item['src'][0] != 'h':
                     print('动态加载问题目前未解决')
-                # print(response.url,item['src'])
+                    print(response.url, item['src'])
                 else:
+                    print(item)
                     yield item
