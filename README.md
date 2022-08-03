@@ -1,5 +1,5 @@
 # 百度百科爬虫
-
+数据在data.rar里
 
 ## 大致流程:
 
@@ -26,8 +26,8 @@ python ./load.py
 - [x] 图册网页是动态网页, 部分数据爬取不全. 补全网页.
 https://baike.baidu.com/pic/%E9%A9%AC%E9%93%83%E8%96%AF/416928?fr=lemma
 - [x] 用mongoDB存储数据
-- [ ] 完成load.py, 从mongodb生成格式化数据
-- [ ] 在爬虫平台完成测试
+- [x] 完成load.py, 从mongodb生成格式化数据
+- [x] 在爬虫平台完成测试
 - [x] 测试github上的方案https://github.com/BaiduSpider/BaiduSpider/; https://github.com/lixiang0/WEB_KG
 
 ## 小结

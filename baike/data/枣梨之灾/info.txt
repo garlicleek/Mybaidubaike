@@ -1,0 +1,16 @@
+_id:
+62e9f0657add9818133ee7fa
+url:
+https://baike.baidu.com/item/%E6%9E%A3%E6%A2%A8%E4%B9%8B%E7%81%BE
+name:
+枣梨之灾
+description:
+枣梨之灾，汉语成语，拼音是zǎo lí zhī zāi，意思是形容滥刻无用不好的书。
+中文名：:枣梨之灾
+拼音：:zǎo lí zhī zāi
+释义：:形容滥刻无用不好的书
+外文名：:The disaster of jujube pear
+近义词：:灾梨祸枣
+paragraph:
+成语解释:形容滥刻无用不好的书。又称之为“灾梨祸枣”。
+成语辨析:近义词：灾梨祸枣古人以梨木、枣木为雕版刻书的上选材料，刊印无价值的书籍就是灾梨祸枣。

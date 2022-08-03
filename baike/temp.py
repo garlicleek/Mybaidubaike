@@ -41,10 +41,14 @@ def test():
     col.drop()
 
 
-client = MongoClient()
-db = client['test']
-col = db['test']
-col2 = db['test2']
-db.col3.insert_one({'name': 'A', 'atr': 'B'})
-for x in db.col3.find():
-    print(x)
+# client = MongoClient()
+# db = client['test']
+# col = db['test']
+# col2 = db['test2']
+# db.col3.insert_one({'name': 'A', 'atr': 'B'})
+# for x in db.col3.find():
+#     print(x['name'])
+
+temp = {}
+if temp['123'] is not None:
+    print(1)

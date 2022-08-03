@@ -1,0 +1,14 @@
+_id:
+62e9f0537add9818133ee6aa
+url:
+https://baike.baidu.com/item/%E5%B9%B2%E9%94%85%E5%8C%85%E5%BF%83%E8%8F%9C
+name:
+干锅包心菜
+description:
+干锅包心菜是以包心菜、五花肉为制作主料的一道菜，制作简单，营养美味。
+中文名：:干锅包心菜
+主要食材：:包心菜、五花肉
+难度：:普通
+辅料：:干辣椒、蒜姜
+paragraph:
+

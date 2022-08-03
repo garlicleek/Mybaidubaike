@@ -1,0 +1,12 @@
+_id:
+62e9f03e7add9818133ee542
+url:
+https://baike.baidu.com/item/%E6%A8%AA%E6%B2%A5%E7%94%9C%E7%8E%89%E7%B1%B3
+name:
+横沥甜玉米
+description:
+最早出产于横沥镇冯马二村及邻近村，近年珠江街、万顷沙镇种植面积也较大。
+中文名：:横沥甜玉米
+类型：:玉米品种
+paragraph:
+

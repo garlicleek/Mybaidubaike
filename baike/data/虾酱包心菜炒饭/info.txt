@@ -1,0 +1,14 @@
+_id:
+62e9f0537add9818133ee6b0
+url:
+https://baike.baidu.com/item/%E8%99%BE%E9%85%B1%E5%8C%85%E5%BF%83%E8%8F%9C%E7%82%92%E9%A5%AD
+name:
+虾酱包心菜炒饭
+description:
+虾酱包心菜炒饭是以虾酱、包心菜为主料的食品。
+中文名：:虾酱包心菜炒饭
+主要食材：:米饭，包心菜（半颗），虾酱
+调料：:鸡精
+工艺：:炒制
+paragraph:
+

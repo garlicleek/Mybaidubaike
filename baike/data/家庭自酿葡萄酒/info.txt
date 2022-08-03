@@ -1,0 +1,12 @@
+_id:
+62e9f06f7add9818133ee8e0
+url:
+https://baike.baidu.com/item/%E5%AE%B6%E5%BA%AD%E8%87%AA%E9%85%BF%E8%91%A1%E8%90%84%E9%85%92
+name:
+家庭自酿葡萄酒
+description:
+家庭自酿葡萄酒就是自己通过选择新鲜优质的葡萄进行酿造出来的葡萄酒
+中文名：:葡萄酒
+外文名：:port wine
+paragraph:
+

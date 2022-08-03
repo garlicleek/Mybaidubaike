@@ -23,12 +23,12 @@ if __name__ == '__main__':
     # 和获取每一部分的工作地址
     path = os.getcwd()
     spider_path = path + r'\baikeCrawlab'
-    parm = {'spider': ['img']}
+    parm = {'spider': ['crops', 'img']}
     print("Now the project is working at ", path)
 
     # 执行爬虫
     executeSpider(spider_path, parm)
     # 运行selenium
-    # executeSelenium()
+    executeSelenium()
     # 再次运行爬虫
-    # executeSpider(spider_path, parm)
+    executeSpider(spider_path, parm)

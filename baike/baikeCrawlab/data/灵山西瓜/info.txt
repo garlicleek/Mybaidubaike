@@ -1,8 +1,0 @@
-url:
-https://baike.baidu.com/item/%E7%81%B5%E5%B1%B1%E8%A5%BF%E7%93%9C
-name:
-灵山西瓜
-description:
-灵山县是广西西瓜生产基地之一，主要品种有“广西三号”、“特新一号”、“黑美人”和以色列花皮瓜等优良品种。
-paragraph:
-

@@ -1,0 +1,14 @@
+_id:
+62e9f0667add9818133ee810
+url:
+https://baike.baidu.com/item/%E9%B2%81%E6%B2%99%E6%A2%A8
+name:
+鲁沙梨
+description:
+鲁沙梨是元阳县的特产，因产于元阳县新城乡鲁沙寨而得名。
+中文名：:鲁沙梨
+外文名：:鲁沙梨
+特产：:元阳县
+产于：:元阳县新城乡鲁沙寨而得名
+paragraph:
+

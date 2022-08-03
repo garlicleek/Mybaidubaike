@@ -1,0 +1,14 @@
+_id:
+62e9f03a7add9818133ee516
+url:
+https://baike.baidu.com/item/%E5%8F%8C%E8%B1%86%E5%8F%8C%E7%B1%B3%E7%B2%A5
+name:
+双豆双米粥
+description:
+双豆双米粥是一道由红豆、黄豆、小麦等食材制成的食品。
+中文名：:双豆双米粥
+分类：:粥
+主要食材：:红豆，黄豆，小麦，大米
+制作方式：:煮
+paragraph:
+

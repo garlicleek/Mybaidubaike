@@ -1,0 +1,14 @@
+_id:
+62e9f0367add9818133ee506
+url:
+https://baike.baidu.com/item/%E9%85%8D%E7%9B%90%E5%B9%BD%E8%8F%BD
+name:
+配盐幽菽
+description:
+配盐幽菽，汉语词语，拼音是pèi yán yōu shū，意思指豆豉出自宋 周密《齐东野语·配盐幽菽》。
+中文名：:配盐幽菽
+拼音：:pèi yán yōu shū
+出处：:《齐东野语·配盐幽菽》
+注音：:ㄆㄟˋ ㄧㄢˊ ㄧㄡ ㄕㄨ
+paragraph:
+
